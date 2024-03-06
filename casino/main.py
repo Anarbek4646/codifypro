@@ -18,11 +18,6 @@ class Player:
 
 def create_player():
     player_name = input('Enter your name: ')
-    
-
-
-
-
 
 
 def num_check():
@@ -69,8 +64,11 @@ while start_money and True:
         print('_______________')
 
     print('money have: ',start_money,'$')
-
-    quest = input('again? y or no: ')
-    if quest == 'no':
+    if start_money <= 0:
         break
-    else: continue
+    else:
+        quest = input('again? y or no: ')
+        if quest == 'no':
+            break
+        else: continue
+

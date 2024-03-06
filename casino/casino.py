@@ -8,6 +8,4 @@ def start(number, money):
         return True
     else:
         return False
-    
 
-        
